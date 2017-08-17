@@ -7,7 +7,8 @@ import { NavController } from 'ionic-angular';
 })
 export class CardsPage {
   cardItems: any[];
-
+  likes:number;
+  dislikes :number;
   constructor(public navCtrl: NavController) {
     this.cardItems = [
       {
@@ -17,7 +18,9 @@ export class CardsPage {
         },
         date: 'November 5, 1955',
         image: 'assets/img/advance-card-bttf.png',
-        content: 'Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.',
+        content: 'پیراهن و سارافن مجلسی',
+        like:12,
+        dislike:2
       },
       {
         user: {
@@ -26,7 +29,9 @@ export class CardsPage {
         },
         date: 'May 12, 1984',
         image: 'assets/img/advance-card-tmntr.jpg',
-        content: 'I face the unknown future, with a sense of hope. Because if a machine, a Terminator, can learn the value of human life, maybe we can too.'
+        content: 'مانتو و پالتو مجلسی',
+        like:25,
+        dislike:2
       },
       {
         user: {
@@ -35,9 +40,18 @@ export class CardsPage {
         },
         date: 'June 28, 1990',
         image: 'assets/img/advance-card-jp.jpg',
-        content: 'Your scientists were so preoccupied with whether or not they could, that they didn\'t stop to think if they should.'
+        content: 'دامن و شلوار مجلسی',
+        like:7,
+        dislike:2
       }
     ];
-
+    this.likes = 12;
+    this.dislikes =1;
+  }
+  LikeIt(item) {
+    item.like ++;
+  }
+  DislikeIt(item) {
+    item.dislike ++;
   }
 }
