@@ -8,9 +8,43 @@
 
 
 <ion-content>
-    <p> سفارش شما با موفقیت ثبت شد </p>
-    <h3>مبلغ پرداخت شده {{item.price}} تومان </h3>
-    <h4> دوخت توسط {{item.tailor.name}} </h4>
-    <h4> پارچه {{item.fabric.content}} </h4>
-    <button ion-button color="primary" (click)="nextStep()">ادامه</button>
+    <ion-list>
+        <ion-row>
+            <p> سفارش شما با موفقیت ثبت شد </p>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                مبلغ قابل پرداخت
+            </ion-col>
+            <ion-col>
+                {{item.price | number : '1.0-0'}} تومان
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                نوع کار
+            </ion-col>
+            <ion-col>
+                {{item.category.content}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                پارچه
+            </ion-col>
+            <ion-col>
+                {{item.fabric.content}}
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                دوخت توسط
+            </ion-col>
+            <ion-col>
+                {{item.tailor.name}}
+            </ion-col>
+        </ion-row>
+
+    </ion-list>
+    <button ion-button color="primary" (click)="nextStep()">پرداخت</button>
 </ion-content>

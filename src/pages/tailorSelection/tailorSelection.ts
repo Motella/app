@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController, NavParams } from 'ionic-angular';
-import { PaymentPage } from '../payment/payment';
+import { ConfirmPage } from '../confirm/confirm';
 
 import { Items } from '../../providers/providers';
 
@@ -29,7 +29,7 @@ export class TailorSelectionPage {
    */
   nextStep(selectedItem) {
     this.item.tailor = selectedItem;
-    this.navCtrl.push(PaymentPage, {
+    this.navCtrl.push(ConfirmPage, {
       item: this.item
     });
   }

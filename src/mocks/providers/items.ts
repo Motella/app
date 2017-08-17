@@ -98,6 +98,20 @@ export class Items {
     this.items.push(item);
   }
 
+  static orders: any[] = [];
+  addOrder(order){
+     Items.orders.push(order);
+  }
+
+  getOrders(){
+    return Items.orders;
+  }
+
+  deleteOrder(order) {
+    Items.orders.splice(Items.orders.indexOf(order), 1);
+  }
+
+
   delete(item: Item) {
     this.items.splice(this.items.indexOf(item), 1);
   }

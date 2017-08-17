@@ -28,7 +28,7 @@
                     <h2>{{item.category.content}}</h2>
                     <p>پارچه: {{item.fabric.content}}</p>
                     <p>دوزنده: {{item.tailor.name}}</p>
-                    <p>{{item.price}} تومان</p>
+                    <p>{{item.price | number : '1.0-0'}} تومان</p>
                     <ion-note item-end *ngIf="item.price">در انتظار تایید</ion-note>
                   </button>
                     <ion-item-options>
