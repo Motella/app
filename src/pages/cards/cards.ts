@@ -13,14 +13,15 @@ export class CardsPage {
     this.cardItems = [
       {
         user: {
-          avatar: 'assets/img/marty-avatar.png',
+          avatar: 'assets/img/cards/Anarkalisuit_1.jpg',
           name: 'Marty McFly'
         },
         date: 'November 5, 1955',
-        image: 'assets/img/advance-card-bttf.png',
+        image: 'assets/img/cards/Anarkalisuit_1.jpg',
         content: 'پیراهن و سارافن مجلسی',
         like:12,
-        dislike:2
+        dislike:2,
+        comment:2
       },
       {
         user: {
@@ -28,10 +29,11 @@ export class CardsPage {
           name: 'Sarah Connor'
         },
         date: 'May 12, 1984',
-        image: 'assets/img/advance-card-tmntr.jpg',
+        image: 'assets/img/cards/kaftan_1-450x480.jpg',
         content: 'مانتو و پالتو مجلسی',
         like:25,
-        dislike:2
+        dislike:2,
+        comment:1
       },
       {
         user: {
@@ -39,10 +41,11 @@ export class CardsPage {
           name: 'Dr. Ian Malcolm'
         },
         date: 'June 28, 1990',
-        image: 'assets/img/advance-card-jp.jpg',
+        image: 'assets/img/cards/Plazzo_1.jpg',
         content: 'دامن و شلوار مجلسی',
         like:7,
-        dislike:2
+        dislike:2,
+        comment:4
       }
     ];
     this.likes = 12;
