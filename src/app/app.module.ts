@@ -7,7 +7,11 @@ import { Storage, IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
+<<<<<<< HEAD
 import { TailorsPage } from '../pages/tailors/tailors';
+=======
+import { CategoriesPage } from '../pages/categories/categories';
+>>>>>>> ac8132ef85cc7e4e29a4d5ef10658f246337a131
 import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
@@ -61,6 +65,7 @@ export function provideSettings(storage: Storage) {
   declarations: [
     MyApp,
     CardsPage,
+    CategoriesPage,
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
@@ -94,6 +99,7 @@ export function provideSettings(storage: Storage) {
   entryComponents: [
     MyApp,
     CardsPage,
+    CategoriesPage,
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
