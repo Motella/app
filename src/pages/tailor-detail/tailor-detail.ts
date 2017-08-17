@@ -17,4 +17,10 @@ export class TailorDetailPage {
 showComment(){
   this.comment = !this.comment;
 }
+likeIt(item) {
+  item.like ++;
+}
+dislikeIt(item) {
+  item.dislike ++;
+}
 }

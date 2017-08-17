@@ -3,7 +3,8 @@ import { Platform, Nav, Config } from 'ionic-angular';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { HomePage } from '../pages/home/home';
+import { AboutPage } from '../pages/about/about';
 import { CardsPage } from '../pages/cards/cards';
 import { FabricsPage } from '../pages/fabrics/fabrics';
 import { ContentPage } from '../pages/content/content';
@@ -27,7 +28,7 @@ import { TranslateService } from '@ngx-translate/core'
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
+        <ion-title>منو</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -50,10 +51,12 @@ export class MyApp {
   pages: any[] = [
     //{ title: 'Tutorial', component: TutorialPage },
     //{ title: 'Welcome', component: WelcomePage },
+    { title: 'خانه', component: HomePage },
     { title: 'خیاط', component: TailorsPage },
     { title: 'سفارش', component: TabsPage },
     { title: 'طرح', component: CardsPage },
-    { title: 'پارچه', component: FabricsPage }
+    { title: 'پارچه', component: FabricsPage },
+    { title: 'درباره ما', component: AboutPage },
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

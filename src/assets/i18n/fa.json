@@ -36,11 +36,11 @@
     "SETTINGS_OPTION3": "Option 3",
     "SETTINGS_OPTION4": "Option 4",
 
-    "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+    "SETTINGS_PROFILE_BUTTON": "ویرایش پروفایل",
 
-    "SETTINGS_PAGE_PROFILE": "Edit Profile",
+    "SETTINGS_PAGE_PROFILE": "ویرایش پروفایل",
 
-    "WELCOME_TITLE": "Welcome",
+    "WELCOME_TITLE": "خوش آمدید",
     "HOME_INTRO": "می تونی از طریق دکمه ی زیر یه سفارش جدید ثبت کنی، همچنین سفارشاتی که دادی پایین صفحه هستن",
 
     "LOGIN_TITLE": "ورود",
@@ -57,16 +57,17 @@
     "ITEM_CREATE_TITLE": "New Item",
     "ITEM_CREATE_CHOOSE_IMAGE": "افزودن تصویر",
 
-    "ITEM_NAME_PLACEHOLDER": "Name",
-    "ITEM_ABOUT_PLACEHOLDER": "About",
+    "ITEM_NAME_PLACEHOLDER": "نام",
+    "ITEM_ABOUT_PLACEHOLDER": "درباره",
 
-    "DONE_BUTTON": "Done",
-    "CANCEL_BUTTON": "Cancel",
+    "DONE_BUTTON": "انجام شد",
+    "CANCEL_BUTTON": "انصراف",
     "DELETE_BUTTON": "لغو سفارش",
 
     "CARDS_TITLE": "طرح ها",
-
-    "SEARCH_TITLE": "Search",
-    "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\"",
+    "ABOUT_TITLE": "درباره ما",
+    "HOME_TITLE": "خانه",
+    "SEARCH_TITLE": "جستجو",
+    "SEARCH_PLACEHOLDER": "جستجوی خیاط",
     "FABRIC_TITLE": "پارچه ها"
 }

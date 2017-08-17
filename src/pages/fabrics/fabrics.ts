@@ -14,7 +14,7 @@ export class FabricsPage {
     this.cardItems = [
       {
         image: '',
-        content: 'پارچه با مشتری',
+        content: ' با مشتری',
         like:0,
         dislike:0,
         comment:0
