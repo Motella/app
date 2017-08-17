@@ -42,14 +42,16 @@ export class SettingsPage {
     public formBuilder: FormBuilder,
     public navParams: NavParams,
     public translate: TranslateService) {
-
-      this.openOrders = [{
-        "name": "هنگامه سلیمی",
-        "tailor": "هنگامه سلیمی",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "طراحی و دوخت لباس های بچه گانه"
-      }]
-
+      this.openOrders = [];
+      var item = navParams.get('item');
+      if (item){
+          this.openOrders.push({
+            "name": item.tailor.name,
+            "tailor": item.tailor.name,
+            "profilePic": item.tailor.pic,
+            "about": item.tailor.about
+          });
+      }
   }
 
   _buildForm() {

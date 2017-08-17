@@ -1,0 +1,14 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{ item.name }}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <p> سفارش شما با موفقیت ثبت شد </p>
+    <h2>مبلغ پرداخت شده {{item.price}} تومان </h2>
+    <button ion-button color="primary" (click)="next()">ادامه</button>
+</ion-content>
