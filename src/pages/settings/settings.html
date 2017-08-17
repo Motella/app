@@ -1,15 +1,22 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>{{ pageTitle }}</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>{{ pageTitle }}</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 <ion-content>
 
-  <form [formGroup]="form" *ngIf="settingsReady">
-    <ion-list *ngIf="page == 'main'">
+    <form [formGroup]="form" *ngIf="settingsReady">
+        <p>
+            {{ 'WELCOME_INTRO' | translate }}
+        </p>
+        <div padding>
+            <button ion-button block (click)="placeOrder()" color="primary">{{ 'PLACE_ORDER' | translate }}</button>
+        </div>
+
+        <!-- <ion-list *ngIf="page == 'main'">
       <ion-item>
         <ion-label>{{ 'SETTINGS_OPTION1' | translate }}</ion-label>
         <ion-toggle formControlName="option1"></ion-toggle>
@@ -39,7 +46,7 @@
         <ion-label>{{ 'SETTINGS_OPTION4' | translate }}</ion-label>
         <ion-input formControlName="option4"></ion-input>
       </ion-item>
-    </ion-list>
-  </form>
+    </ion-list> -->
+    </form>
 
 </ion-content>
