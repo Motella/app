@@ -45,12 +45,7 @@ export class SettingsPage {
       this.openOrders = [];
       var item = navParams.get('item');
       if (item){
-          this.openOrders.push({
-            "name": item.tailor.name,
-            "tailor": item.tailor.name,
-            "profilePic": item.tailor.pic,
-            "about": item.tailor.about
-          });
+          this.openOrders.push(item);
       }
   }
 
@@ -104,6 +99,10 @@ export class SettingsPage {
 
   ngOnChanges() {
     console.log('Ng All Changes');
+  }
+
+  deleteItem(item){
+    this.openOrders.pop();
   }
 
   placeOrder(){

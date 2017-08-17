@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, ModalController, NavParams } from 'ionic-angular';
+import { SettingsPage } from '../settings/settings';
 
 import { Items } from '../../providers/providers';
 
@@ -12,6 +13,12 @@ export class ConfirmPage {
 
   constructor(public navCtrl: NavController, navParams: NavParams, items: Items) {
     this.item = navParams.get('item') || items.defaultItem;
+  }
+
+  nextStep(selectedItem) {
+    this.navCtrl.push(SettingsPage, {
+      item: this.item
+    });
   }
 
 }

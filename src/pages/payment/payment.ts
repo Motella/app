@@ -16,7 +16,7 @@ export class PaymentPage {
     this.item.price = Math.floor((Math.random() * 100) + 1) * 1000;
   }
 
-  placeOrder(){
+  nextStep(){
     this.navCtrl.push(ConfirmPage, {
       item: this.item
     });

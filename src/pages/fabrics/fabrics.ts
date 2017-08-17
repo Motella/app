@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { TailorSelectionPage } from '../tailorSelection/tailorSelection';
 
 @Component({
   selector: 'page-fabrics',
@@ -7,7 +8,9 @@ import { NavController } from 'ionic-angular';
 })
 export class FabricsPage {
   cardItems: any[];
-  constructor(public navCtrl: NavController) {
+  item: any;
+  constructor(public navCtrl: NavController, navParams: NavParams) {
+    this.item = navParams.get('item');
     this.cardItems = [
       {
         image: 'assets/img/fabrics/Viscose-Jersey-Fabric.jpg',
@@ -52,9 +55,10 @@ export class FabricsPage {
         comment:4
       }];
   }
-  nextStep(item) {
-    // this.navCtrl.push(ItemDetailPage, {
-    //   item: item
-    // });
+  nextStep(selectedItem) {
+    this.item.fabric = selectedItem;
+    this.navCtrl.push(TailorSelectionPage, {
+      item: this.item
+    });
   }
 }

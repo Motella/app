@@ -9,6 +9,8 @@
 
 <ion-content>
     <p> سفارش شما با موفقیت ثبت شد </p>
-    <h2>مبلغ پرداخت شده {{item.price}} تومان </h2>
-    <button ion-button color="primary" (click)="next()">ادامه</button>
+    <h3>مبلغ پرداخت شده {{item.price}} تومان </h3>
+    <h4> دوخت توسط {{item.tailor.name}} </h4>
+    <h4> پارچه {{item.fabric.content}} </h4>
+    <button ion-button color="primary" (click)="nextStep()">ادامه</button>
 </ion-content>
