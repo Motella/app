@@ -41,6 +41,7 @@
     "SETTINGS_PAGE_PROFILE": "Edit Profile",
 
     "WELCOME_TITLE": "Welcome",
+    "HOME_INTRO": "می تونی از طریق دکمه ی زیر یه سفارش جدید ثبت کنی، همچنین سفارشاتی که دادی پایین صفحه هستن",
 
     "LOGIN_TITLE": "ورود",
     "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
@@ -48,9 +49,10 @@
     "SIGNUP_TITLE": "ثبت نام",
     "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
     "SIGNUP_BUTTON": "ثبت نام",
-
-    "LIST_MASTER_TITLE": "خیاطان",
-
+    "MY_ORDERS": "سفارشات من",
+    "NO_ORDERS_FOUND": "شما سفارشی ندارید، درصورت نیاز به مشاهده سفارشات روی لینک زیر کلیک کن",
+    "SHOW_ORDER_HISTORY": "مشاهده سفارشات قبلی",
+    "LIST_MASTER_TITLE": "خیاطها",
     "ITEM_CREATE_TITLE": "New Item",
     "ITEM_CREATE_CHOOSE_IMAGE": "افزودن تصویر",
 

@@ -10,10 +10,30 @@
 
     <form [formGroup]="form" *ngIf="settingsReady">
         <p>
-            {{ 'WELCOME_INTRO' | translate }}
+            {{ 'HOME_INTRO' | translate }}
         </p>
         <div padding>
             <button ion-button block (click)="placeOrder()" color="primary">{{ 'PLACE_ORDER' | translate }}</button>
+        </div>
+        <div *ngIf="myOrders">
+            <h2>
+                {{ 'MY_ORDERS' | translate }}
+            </h2>
+        </div>
+        <div *ngIf="!myOrders">
+            <div *ngIf="allOrdersCount">
+                <h4>
+                    {{ 'NO_ORDERS_FOUND' | translate }}
+                </h4>
+                <button ion-button block (click)="viewOrderHistory()" color="primary">{{ 'SHOW_ORDER_HISTORY' | translate }}</button>
+                <div>
+                    <div *ngIf="!allOrdersCount">
+                        <h4>
+                            {{ 'NO_ORDERS_FOUND2' | translate }}
+                        </h4>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- <ion-list *ngIf="page == 'main'">
