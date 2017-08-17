@@ -7,7 +7,9 @@ import{FabricsPage} from '../fabrics/fabrics';
 })
 export class CategoriesPage {
   cardItems: any[];
+  item : any;
   constructor(public navCtrl: NavController) {
+    this.item = {};
     this.cardItems = [
       {
         image: 'assets/img/cards/Anarkalisuit_1.jpg',
@@ -52,9 +54,10 @@ export class CategoriesPage {
         comment:4
       }];
   }
-  nextStep(item) {
+  nextStep(selectedItem) {
+    this.item.category = selectedItem;
     this.navCtrl.push(FabricsPage, {
-      item: item
+      item: this.item
     });
   }
 }

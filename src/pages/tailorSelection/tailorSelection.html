@@ -15,7 +15,7 @@
 <ion-content>
     <ion-list>
         <ion-item *ngFor="let item of currentItems">
-            <button ion-item (click)="openItem(item)">
+            <button ion-item (click)="nextStep(item)">
             <ion-avatar item-start>
                 <img [src]="item.profilePic">
             </ion-avatar>

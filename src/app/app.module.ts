@@ -16,6 +16,8 @@ import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { TailorSelectionPage } from '../pages/tailorSelection/tailorSelection';
 import { TailorDetailPage } from '../pages/tailor-detail/tailor-detail';
 import { LoginPage } from '../pages/login/login';
+import { PaymentPage } from '../pages/payment/payment';
+import { ConfirmPage } from '../pages/confirm/confirm';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
 import { SearchPage } from '../pages/search/search';
@@ -70,6 +72,8 @@ export function provideSettings(storage: Storage) {
     ItemDetailPage,
     TailorSelectionPage,
     TailorDetailPage,
+    ConfirmPage,
+    PaymentPage,
     LoginPage,
     MapPage,
     MenuPage,
@@ -105,6 +109,8 @@ export function provideSettings(storage: Storage) {
     ItemDetailPage,
     TailorSelectionPage,
     TailorDetailPage,
+    ConfirmPage,
+    PaymentPage,
     LoginPage,
     MapPage,
     MenuPage,

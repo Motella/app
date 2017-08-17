@@ -42,14 +42,11 @@ export class SettingsPage {
     public formBuilder: FormBuilder,
     public navParams: NavParams,
     public translate: TranslateService) {
-
-      this.openOrders = [{
-        "name": "هنگامه سلیمی",
-        "tailor": "هنگامه سلیمی",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "طراحی و دوخت لباس های بچه گانه"
-      }]
-
+      this.openOrders = [];
+      var item = navParams.get('item');
+      if (item){
+          this.openOrders.push(item);
+      }
   }
 
   _buildForm() {
@@ -102,6 +99,10 @@ export class SettingsPage {
 
   ngOnChanges() {
     console.log('Ng All Changes');
+  }
+
+  deleteItem(item){
+    this.openOrders.pop();
   }
 
   placeOrder(){

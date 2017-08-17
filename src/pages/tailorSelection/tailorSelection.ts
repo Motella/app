@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
-
-import { ItemCreatePage } from '../item-create/item-create';
-import { ItemDetailPage } from '../item-detail/item-detail';
+import { NavController, ModalController, NavParams } from 'ionic-angular';
+import { PaymentPage } from '../payment/payment';
 
 import { Items } from '../../providers/providers';
 
@@ -14,8 +12,9 @@ import { Item } from '../../models/item';
 })
 export class TailorSelectionPage {
   currentItems: Item[];
-
-  constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {
+  item: any;
+  constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController, navParams: NavParams) {
+    this.item = navParams.get('item');
     this.currentItems = this.items.query();
   }
 
@@ -28,9 +27,10 @@ export class TailorSelectionPage {
   /**
    * Navigate to the detail page for this item.
    */
-  openItem(item: Item) {
-    this.navCtrl.push(ItemDetailPage, {
-      item: item
+  nextStep(selectedItem) {
+    this.item.tailor = selectedItem;
+    this.navCtrl.push(PaymentPage, {
+      item: this.item
     });
   }
 }
