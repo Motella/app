@@ -10,6 +10,13 @@ export class FabricsPage {
   constructor(public navCtrl: NavController) {
     this.cardItems = [
       {
+        image: '',
+        content: 'پارچه با مشتری',
+        like:0,
+        dislike:0,
+        comment:0
+      },
+      {
         image: 'assets/img/fabrics/Viscose-Jersey-Fabric.jpg',
         content: 'ویسکوز',
         like:12,
