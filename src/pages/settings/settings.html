@@ -15,12 +15,24 @@
         <div padding>
             <button ion-button block (click)="placeOrder()" color="primary">{{ 'PLACE_ORDER' | translate }}</button>
         </div>
-        <div *ngIf="myOrders">
+        <div *ngIf="openOrders">
             <h2>
                 {{ 'MY_ORDERS' | translate }}
             </h2>
+            <ion-list>
+                <ion-item-sliding *ngFor="let item of openOrders">
+                    <button ion-item (click)="openItem(item)">
+                    <ion-avatar item-start>
+                      <img [src]="item.profilePic" />
+                    </ion-avatar>
+                    <h2>{{item.name}}</h2>
+                    <p>{{item.about}}</p>
+                    <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+                  </button>
+                </ion-item-sliding>
+            </ion-list>
         </div>
-        <div *ngIf="!myOrders">
+        <div *ngIf="!openOrders">
             <div *ngIf="allOrdersCount">
                 <h4>
                     {{ 'NO_ORDERS_FOUND' | translate }}
