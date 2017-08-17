@@ -7,7 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CardsPage } from '../pages/cards/cards';
 import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
-import { ListMasterPage } from '../pages/list-master/list-master';
+import { TailorsPage } from '../pages/tailors/tailors';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
@@ -55,7 +55,7 @@ export class MyApp {
     { title: 'Login', component: LoginPage },
     { title: 'Signup', component: SignupPage },
     { title: 'Map', component: MapPage },
-    { title: 'Master Detail', component: ListMasterPage },
+    { title: 'Master Detail', component: TailorsPage },
     { title: 'Menu', component: MenuPage },
     { title: 'Settings', component: SettingsPage },
     { title: 'Search', component: SearchPage }

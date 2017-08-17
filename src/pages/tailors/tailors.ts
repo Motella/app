@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 
-import { ItemCreatePage } from '../item-create/item-create';
-import { ItemDetailPage } from '../item-detail/item-detail';
+import { TailorDetailPage } from '../tailor-detail/tailor-detail';
 
 import { Items } from '../../providers/providers';
 
 import { Item } from '../../models/item';
 
 @Component({
-  selector: 'page-list-master',
-  templateUrl: 'list-master.html'
+  selector: 'page-tailors',
+  templateUrl: 'tailors.html'
 })
-export class ListMasterPage {
+export class TailorsPage {
   currentItems: Item[];
 
   constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {
@@ -25,18 +24,25 @@ export class ListMasterPage {
   ionViewDidLoad() {
   }
 
-  /**
-   * Prompt the user to add a new item. This shows our ItemCreatePage in a
-   * modal and then adds the new item to our data source if the user created one.
-   */
-  addItem() {
-    let addModal = this.modalCtrl.create(ItemCreatePage);
-    addModal.onDidDismiss(item => {
-      if (item) {
-        this.items.add(item);
+  likeIt(item) {
+    if (!item.liked){
+       item.likes ++;
+       item.liked = true;
+      if (item.disliked){
+        item.dislikes--;
+        item.disliked = false;
       }
-    })
-    addModal.present();
+    }
+  }
+  dislikeIt(item) {
+    if (!item.disliked){
+       item.dislikes ++;
+       item.disliked = true;
+      if (item.liked){
+        item.likes--;
+        item.liked = false;
+      }
+    }
   }
 
   /**
@@ -50,7 +56,7 @@ export class ListMasterPage {
    * Navigate to the detail page for this item.
    */
   openItem(item: Item) {
-    this.navCtrl.push(ItemDetailPage, {
+    this.navCtrl.push(TailorDetailPage, {
       item: item
     });
   }

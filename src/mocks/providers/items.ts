@@ -19,37 +19,55 @@ export class Items {
       {
         "name": "شهرزاد دوستی ",
         "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "طراحی و دوخت انواع لباس های عروس و شب"
+        "about": "طراحی و دوخت انواع لباس های عروس و شب",
+        "likes": 5,
+        "dislikes": 1,
+        "comments": [
+          "خیاط خوبیه ، یه لباس دوخته عالیه",
+          "پارچم رو خراب کرده"
+        ]
       },
       {
         "name": "هنگامه سلیمی",
         "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "طراحی و دوخت لباس های بچه گانه"
+        "about": "طراحی و دوخت لباس های بچه گانه",
+        "likes": 5,
+        "dislikes": 1,
       },
       {
         "name": "یاس فرابی",
         "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "طراحی و دوخت لباس مردانه رسمی و اسپورت"
+        "about": "طراحی و دوخت لباس مردانه رسمی و اسپورت",
+        "likes": 15,
+        "dislikes": 6,
       },
       {
         "name": "گلنار توانا",
         "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "about": "Eva is an Eagle.",
+        "likes": 15,
+        "dislikes": 3,
       },
       {
         "name": "کلانتر هرمزی",
         "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "طراحی و دوخت کت و شلوار"
+        "about": "طراحی و دوخت کت و شلوار",
+        "likes": 50,
+        "dislikes": 1,
       },
       {
         "name": "گلشن میناوند",
         "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "طراحی و دوخت لباس عروس"
+        "about": "طراحی و دوخت لباس عروس",
+        "likes": 6,
+        "dislikes": 5,
       },
       {
         "name": "گل رز",
         "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "طراحی و دوخت لباس مجلسی"
+        "about": "طراحی و دوخت لباس مجلسی",
+        "likes": 24,
+        "dislikes": 3,
       }
     ];
 

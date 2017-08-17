@@ -1,5 +1,5 @@
-import { ListMasterPage } from './list-master/list-master';
 import { SearchPage } from './search/search';
+import { TailorsPage } from './tailors/tailors';
 import { SettingsPage } from './settings/settings';
 import { TabsPage } from './tabs/tabs';
 import { TutorialPage } from './tutorial/tutorial';
@@ -14,4 +14,4 @@ export const MainPage = TabsPage;
 // The initial root pages for our tabs (remove if not using tabs)
 export const Tab1Root = SettingsPage;
 export const Tab2Root = SearchPage;
-export const Tab3Root = ListMasterPage;
+export const Tab3Root = TailorsPage;
