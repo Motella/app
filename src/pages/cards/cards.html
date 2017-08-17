@@ -1,46 +1,33 @@
 <ion-header>
-
     <ion-navbar>
         <ion-title>{{ 'CARDS_TITLE' | translate }}</ion-title>
     </ion-navbar>
-
 </ion-header>
-
-
 <ion-content>
     <ion-card *ngFor="let item of cardItems">
-        <!-- <ion-item>
-      <ion-avatar item-start>
-        <img [src]="item.user.avatar">
-      </ion-avatar>
-      <h2>{{item.user.name}}</h2>
-      <p>{{item.date}}</p>
-    </ion-item> -->
-        <img [src]="item.image">
-
         <ion-card-content>
-            <p>{{item.content}}</p>
+            <h2>{{item.content}}</h2>
         </ion-card-content>
+        <img [src]="item.image">
         <ion-row>
             <ion-col>
                 <button ion-button color="primary" clear small icon-start (click)="LikeIt(item)">
-                <ion-icon name='thumbs-up'></ion-icon>
+                <ion-icon name='ios-heart' color="red"></ion-icon>
                    {{item.like}}
                 </button>
             </ion-col>
             <ion-col>
                 <button ion-button color="primary" clear small icon-start (click)="DislikeIt(item)">
-              <ion-icon name='thumbs-down'></ion-icon>
+              <ion-icon name='ios-heart-outline' color="red"></ion-icon>
                  {{item.dislike}}
               </button>
             </ion-col>
             <ion-col>
                 <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
+            <ion-icon name='ios-text' color="red"></ion-icon>
               {{item.comment}} Comments
             </button>
             </ion-col>
-
         </ion-row>
     </ion-card>
 </ion-content>
