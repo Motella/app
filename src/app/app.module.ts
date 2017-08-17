@@ -7,11 +7,8 @@ import { Storage, IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
-<<<<<<< HEAD
 import { FabricsPage } from '../pages/fabrics/fabrics';
-=======
 import { TailorsPage } from '../pages/tailors/tailors';
->>>>>>> d912c2ae3423351da09a7ec3a12d3eba997688f7
 import { CategoriesPage } from '../pages/categories/categories';
 import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';

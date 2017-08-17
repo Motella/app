@@ -48,13 +48,9 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-<<<<<<< HEAD
-    { title: 'خیاط', component: ListMasterPage },
-=======
     //{ title: 'Tutorial', component: TutorialPage },
     //{ title: 'Welcome', component: WelcomePage },
     { title: 'خیاط', component: TailorsPage },
->>>>>>> d912c2ae3423351da09a7ec3a12d3eba997688f7
     { title: 'سفارش', component: TabsPage },
     { title: 'طرح', component: CardsPage },
     { title: 'پارچه', component: FabricsPage }
