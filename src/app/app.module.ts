@@ -7,12 +7,17 @@ import { Storage, IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
+<<<<<<< HEAD
 import { FabricsPage } from '../pages/fabrics/fabrics';
+=======
+import { TailorsPage } from '../pages/tailors/tailors';
+>>>>>>> d912c2ae3423351da09a7ec3a12d3eba997688f7
 import { CategoriesPage } from '../pages/categories/categories';
 import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
-import { ListMasterPage } from '../pages/list-master/list-master';
+import { TailorSelectionPage } from '../pages/tailorSelection/tailorSelection';
+import { TailorDetailPage } from '../pages/tailor-detail/tailor-detail';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
@@ -66,7 +71,8 @@ export function provideSettings(storage: Storage) {
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
-    ListMasterPage,
+    TailorSelectionPage,
+    TailorDetailPage,
     LoginPage,
     MapPage,
     MenuPage,
@@ -75,7 +81,8 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    TailorsPage
   ],
   imports: [
     BrowserModule,
@@ -99,7 +106,8 @@ export function provideSettings(storage: Storage) {
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
-    ListMasterPage,
+    TailorSelectionPage,
+    TailorDetailPage,
     LoginPage,
     MapPage,
     MenuPage,
@@ -108,7 +116,8 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    TailorsPage
   ],
   providers: [
     Api,

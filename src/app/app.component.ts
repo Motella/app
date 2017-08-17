@@ -8,7 +8,7 @@ import { CardsPage } from '../pages/cards/cards';
 import { FabricsPage } from '../pages/fabrics/fabrics';
 import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
-import { ListMasterPage } from '../pages/list-master/list-master';
+import { TailorsPage } from '../pages/tailors/tailors';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
@@ -48,7 +48,13 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
+<<<<<<< HEAD
     { title: 'خیاط', component: ListMasterPage },
+=======
+    //{ title: 'Tutorial', component: TutorialPage },
+    //{ title: 'Welcome', component: WelcomePage },
+    { title: 'خیاط', component: TailorsPage },
+>>>>>>> d912c2ae3423351da09a7ec3a12d3eba997688f7
     { title: 'سفارش', component: TabsPage },
     { title: 'طرح', component: CardsPage },
     { title: 'پارچه', component: FabricsPage }
