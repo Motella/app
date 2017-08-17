@@ -1,15 +1,42 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>{{ pageTitle }}</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>{{ pageTitle }}</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 <ion-content>
 
-  <form [formGroup]="form" *ngIf="settingsReady">
-    <ion-list *ngIf="page == 'main'">
+    <form [formGroup]="form" *ngIf="settingsReady">
+        <p>
+            {{ 'HOME_INTRO' | translate }}
+        </p>
+        <div padding>
+            <button ion-button block (click)="placeOrder()" color="primary">{{ 'PLACE_ORDER' | translate }}</button>
+        </div>
+        <div *ngIf="myOrders">
+            <h2>
+                {{ 'MY_ORDERS' | translate }}
+            </h2>
+        </div>
+        <div *ngIf="!myOrders">
+            <div *ngIf="allOrdersCount">
+                <h4>
+                    {{ 'NO_ORDERS_FOUND' | translate }}
+                </h4>
+                <button ion-button block (click)="viewOrderHistory()" color="primary">{{ 'SHOW_ORDER_HISTORY' | translate }}</button>
+                <div>
+                    <div *ngIf="!allOrdersCount">
+                        <h4>
+                            {{ 'NO_ORDERS_FOUND2' | translate }}
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <ion-list *ngIf="page == 'main'">
       <ion-item>
         <ion-label>{{ 'SETTINGS_OPTION1' | translate }}</ion-label>
         <ion-toggle formControlName="option1"></ion-toggle>
@@ -39,7 +66,7 @@
         <ion-label>{{ 'SETTINGS_OPTION4' | translate }}</ion-label>
         <ion-input formControlName="option4"></ion-input>
       </ion-item>
-    </ion-list>
-  </form>
+    </ion-list> -->
+    </form>
 
 </ion-content>

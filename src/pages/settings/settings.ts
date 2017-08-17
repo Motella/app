@@ -31,6 +31,8 @@ export class SettingsPage {
   page: string = 'main';
   pageTitleKey: string = 'SETTINGS_TITLE';
   pageTitle: string;
+  openOrders: any[];
+  allOrdersCount : number;
 
   subSettings: any = SettingsPage;
 
