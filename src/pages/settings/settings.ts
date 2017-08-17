@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { NavController, NavParams } from 'ionic-angular';
+import { CardsPage } from '../cards/cards';
 
 import { Settings } from '../../providers/settings';
 
@@ -41,6 +42,14 @@ export class SettingsPage {
     public formBuilder: FormBuilder,
     public navParams: NavParams,
     public translate: TranslateService) {
+
+      this.openOrders = [{
+        "name": "هنگامه سلیمی",
+        "tailor": "هنگامه سلیمی",
+        "profilePic": "assets/img/speakers/cheetah.jpg",
+        "about": "طراحی و دوخت لباس های بچه گانه"
+      }]
+
   }
 
   _buildForm() {
@@ -93,5 +102,9 @@ export class SettingsPage {
 
   ngOnChanges() {
     console.log('Ng All Changes');
+  }
+
+  placeOrder(){
+    this.navCtrl.push(CardsPage);
   }
 }
