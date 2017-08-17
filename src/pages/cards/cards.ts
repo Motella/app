@@ -12,10 +12,6 @@ export class CardsPage {
   constructor(public navCtrl: NavController) {
     this.cardItems = [
       {
-        user: {
-          avatar: 'assets/img/cards/Anarkalisuit_1.jpg',
-          name: 'پیراهن'
-        },
         date: 'November 5, 1955',
         image: 'assets/img/cards/Anarkalisuit_1.jpg',
         content: 'پیراهن',
@@ -24,10 +20,6 @@ export class CardsPage {
         comment:2
       },
       {
-        user: {
-          avatar: 'assets/img/cards/kaftan_1-450x480.jpg',
-          name: 'سارافن'
-        },
         date: 'November 5, 1955',
         image: 'assets/img/cards/kaftan_1-450x480.jpg',
         content: 'سارافن',
@@ -48,22 +40,13 @@ export class CardsPage {
         comment:1
       },
       {
-        user: {
-          avatar: 'assets/imgcards/kaftan_1-450x480.jpeg',
-          name: 'پالتو'
-        },
-        date: 'May 12, 1984',
-        image: 'assets/img/cards/kaftan_1-450x480.jpg',
-        content: 'پالتو',
+        image: 'assets/img/cards/femaleshirt_1.jpg',
+        content: 'شومیز',
         like:25,
         dislike:2,
         comment:1
       },
       {
-        user: {
-          avatar: 'assets/img/ian-avatar.png',
-          name: 'شلوار'
-        },
         date: 'June 28, 1990',
         image: 'assets/img/cards/Plazzo_1.jpg',
         content: 'شلوار',
@@ -72,10 +55,6 @@ export class CardsPage {
         comment:4
       },
       {
-        user: {
-          avatar: 'assets/img/ian-avatar.png',
-          name: 'دامن'
-        },
         date: 'June 28, 1990',
         image: 'assets/img/cards/skirt_1.jpg',
         content: 'دامن',

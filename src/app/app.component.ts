@@ -5,6 +5,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CardsPage } from '../pages/cards/cards';
+import { FabricsPage } from '../pages/fabrics/fabrics';
 import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
 import { ListMasterPage } from '../pages/list-master/list-master';
@@ -47,16 +48,10 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    //{ title: 'Tutorial', component: TutorialPage },
-    //{ title: 'Welcome', component: WelcomePage },
     { title: 'خیاط', component: ListMasterPage },
     { title: 'سفارش', component: TabsPage },
     { title: 'طرح', component: CardsPage },
-    //{ title: 'Content', component: ContentPage },
-   // { title: 'Login', component: LoginPage },
-   // { title: 'Signup', component: SignupPage },
-   // { title: 'Map', component: MapPage },
-    { title: 'Menu', component: MenuPage },
+    { title: 'پارچه', component: FabricsPage }
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
