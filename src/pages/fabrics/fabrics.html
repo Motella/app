@@ -8,7 +8,7 @@
         <ion-item-sliding *ngFor="let item of cardItems">
             <button ion-item (click)="nextStep(item)">
             <h2> {{item.content}}</h2>
-            <img [src]="item.image">
+            <img *ngIf="item.image!=''"  [src]="item.image">
             </button>
         </ion-item-sliding>
     </ion-list>

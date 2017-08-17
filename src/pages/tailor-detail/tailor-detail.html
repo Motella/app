@@ -25,19 +25,27 @@
         <ion-row>
             <ion-col>
                 <button ion-button color="primary" clear small icon-start (click)="likeIt(item)">
-                <ion-icon name='thumbs-up'></ion-icon>
+                <ion-icon name='ios-heart'></ion-icon>
                    {{item.likes}}
                 </button>
             </ion-col>
             <ion-col>
                 <button ion-button color="primary" clear small icon-start (click)="dislikeIt(item)">
-              <ion-icon name='thumbs-down'></ion-icon>
+              <ion-icon name='ios-heart-outline'></ion-icon>
                  {{item.dislikes}}
               </button>
             </ion-col>
+            <ion-col>
+                <button ion-button color="primary" clear small icon-start (click)="showComment()">
+                    <ion-icon name='ios-text'></ion-icon> Comments
+              </button>
+            </ion-col>
         </ion-row>
-        <ion-row>
-            <label><ion-icon name='text'></ion-icon> Comments</label>
+        <!-- <ion-row>
+            <ion-label color="primary">
+                <ion-icon name='ios-text'></ion-icon> Comments</ion-label>
+        </ion-row> -->
+        <ion-row *ngIf="comment">
             <div *ngFor="let comment of item.comments">
                 <ion-list>
                     <ion-item>

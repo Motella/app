@@ -9,9 +9,12 @@ import { Items } from '../../providers/providers';
 })
 export class TailorDetailPage {
   item: any;
-
+  comment:boolean;
   constructor(public navCtrl: NavController, navParams: NavParams, items: Items) {
     this.item = navParams.get('item') || items.defaultItem;
+    this.comment=false;
   }
-
+showComment(){
+  this.comment = !this.comment;
+}
 }
