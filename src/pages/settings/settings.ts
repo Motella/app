@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { NavController, NavParams } from 'ionic-angular';
 import { CardsPage } from '../cards/cards';
-
+import { CategoriesPage } from '../categories/categories';
 import { Settings } from '../../providers/settings';
 
 import { TranslateService } from '@ngx-translate/core';
@@ -105,6 +105,6 @@ export class SettingsPage {
   }
 
   placeOrder(){
-    this.navCtrl.push(CardsPage);
+    this.navCtrl.push(CategoriesPage);
   }
 }
