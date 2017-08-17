@@ -14,23 +14,47 @@ export class CardsPage {
       {
         user: {
           avatar: 'assets/img/cards/Anarkalisuit_1.jpg',
-          name: 'Marty McFly'
+          name: 'پیراهن'
         },
         date: 'November 5, 1955',
         image: 'assets/img/cards/Anarkalisuit_1.jpg',
-        content: 'پیراهن و سارافن مجلسی',
+        content: 'پیراهن',
         like:12,
         dislike:2,
         comment:2
       },
       {
         user: {
-          avatar: 'assets/img/sarah-avatar.png.jpeg',
-          name: 'Sarah Connor'
+          avatar: 'assets/img/cards/kaftan_1-450x480.jpg',
+          name: 'سارافن'
+        },
+        date: 'November 5, 1955',
+        image: 'assets/img/cards/kaftan_1-450x480.jpg',
+        content: 'سارافن',
+        like:12,
+        dislike:2,
+        comment:2
+      },
+      {
+        user: {
+          avatar: 'assets/img/Tunic_1-450x480.jpg',
+          name: 'مانتو'
+        },
+        date: 'May 12, 1984',
+        image: 'assets/img/cards/Tunic_1-450x480.jpg',
+        content: 'مانتو',
+        like:25,
+        dislike:2,
+        comment:1
+      },
+      {
+        user: {
+          avatar: 'assets/imgcards/kaftan_1-450x480.jpeg',
+          name: 'پالتو'
         },
         date: 'May 12, 1984',
         image: 'assets/img/cards/kaftan_1-450x480.jpg',
-        content: 'مانتو و پالتو مجلسی',
+        content: 'پالتو',
         like:25,
         dislike:2,
         comment:1
@@ -38,11 +62,23 @@ export class CardsPage {
       {
         user: {
           avatar: 'assets/img/ian-avatar.png',
-          name: 'Dr. Ian Malcolm'
+          name: 'شلوار'
         },
         date: 'June 28, 1990',
         image: 'assets/img/cards/Plazzo_1.jpg',
-        content: 'دامن و شلوار مجلسی',
+        content: 'شلوار',
+        like:7,
+        dislike:2,
+        comment:4
+      },
+      {
+        user: {
+          avatar: 'assets/img/ian-avatar.png',
+          name: 'دامن'
+        },
+        date: 'June 28, 1990',
+        image: 'assets/img/cards/skirt_1.jpg',
+        content: 'دامن',
         like:7,
         dislike:2,
         comment:4

@@ -1,17 +1,15 @@
 <ion-header>
-
     <ion-navbar>
         <ion-title>{{ 'CARDS_TITLE' | translate }}</ion-title>
     </ion-navbar>
-
 </ion-header>
-
-
 <ion-content>
-    <ion-card *ngFor="let item of cardItems">
-        <img [src]="item.image">
-        <ion-card-content>
-            <p>{{item.content}}</p>
-        </ion-card-content>
-    </ion-card>
+    <ion-list>
+        <ion-item-sliding *ngFor="let item of cardItems">
+            <button ion-item (click)="nextStep(item)">
+            <h2> {{item.content}}</h2>
+            <img [src]="item.image">
+            </button>
+        </ion-item-sliding>
+    </ion-list>
 </ion-content>
