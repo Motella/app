@@ -13,6 +13,7 @@ export class ConfirmPage {
 
   constructor(public navCtrl: NavController, navParams: NavParams, items: Items) {
     this.item = navParams.get('item') || items.defaultItem;
+    this.item.price = Math.floor((Math.random() * 100) + 1) * 1000;
   }
 
   nextStep(selectedItem) {
