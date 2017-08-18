@@ -3,12 +3,17 @@ import { Platform, Nav, Config } from 'ionic-angular';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { HomePage } from '../pages/home/home';
+import { AboutPage } from '../pages/about/about';
 import { CardsPage } from '../pages/cards/cards';
+<<<<<<< HEAD
 import {SizePage} from '../pages/size/size';
+=======
+import { FabricsPage } from '../pages/fabrics/fabrics';
+>>>>>>> f405530b5fa173e141c222f84134283e3d7be628
 import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
-import { ListMasterPage } from '../pages/list-master/list-master';
+import { TailorsPage } from '../pages/tailors/tailors';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
@@ -27,7 +32,7 @@ import { TranslateService } from '@ngx-translate/core'
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
+        <ion-title>منو</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -50,15 +55,21 @@ export class MyApp {
   pages: any[] = [
     //{ title: 'Tutorial', component: TutorialPage },
     //{ title: 'Welcome', component: WelcomePage },
-    { title: 'خیاط', component: ListMasterPage },
+    { title: 'خانه', component: HomePage },
+    { title: 'خیاط', component: TailorsPage },
     { title: 'سفارش', component: TabsPage },
     { title: 'طرح', component: CardsPage },
+<<<<<<< HEAD
     { title: 'اندازه', component: SizePage },
     //{ title: 'Content', component: ContentPage },
    // { title: 'Login', component: LoginPage },
    // { title: 'Signup', component: SignupPage },
    // { title: 'Map', component: MapPage },
     { title: 'Menu', component: MenuPage },
+=======
+    { title: 'پارچه', component: FabricsPage },
+    { title: 'درباره ما', component: AboutPage },
+>>>>>>> f405530b5fa173e141c222f84134283e3d7be628
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

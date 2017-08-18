@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { CardsPage } from '../cards/cards';
 import { CategoriesPage } from '../categories/categories';
 import { Settings } from '../../providers/settings';
+import { Items } from '../../providers/providers';
 
 import { TranslateService } from '@ngx-translate/core';
 
@@ -41,15 +42,14 @@ export class SettingsPage {
     public settings: Settings,
     public formBuilder: FormBuilder,
     public navParams: NavParams,
-    public translate: TranslateService) {
-
-      this.openOrders = [{
-        "name": "هنگامه سلیمی",
-        "tailor": "هنگامه سلیمی",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "طراحی و دوخت لباس های بچه گانه"
-      }]
-
+    public translate: TranslateService,
+  public items: Items) {
+      
+      var item = navParams.get('item');
+      if (item){
+          items.addOrder(item);
+      }
+      this.openOrders = items.getOrders();
   }
 
   _buildForm() {
@@ -102,6 +102,11 @@ export class SettingsPage {
 
   ngOnChanges() {
     console.log('Ng All Changes');
+  }
+
+  deleteItem(item){
+    this.items.deleteOrder(item);
+    this.openOrders = this.items.getOrders();
   }
 
   placeOrder(){

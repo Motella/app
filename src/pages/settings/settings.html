@@ -15,20 +15,28 @@
         <div padding>
             <button ion-button block (click)="placeOrder()" color="primary">{{ 'PLACE_ORDER' | translate }}</button>
         </div>
-        <div *ngIf="openOrders">
+        <div *ngIf="openOrders && openOrders.length > 0">
             <h2>
                 {{ 'MY_ORDERS' | translate }}
             </h2>
             <ion-list>
                 <ion-item-sliding *ngFor="let item of openOrders">
-                    <button ion-item (click)="openItem(item)">
+                    <button ion-item>
                     <ion-avatar item-start>
-                      <img [src]="item.profilePic" />
+                      <img [src]="item.tailor.profilePic" />
                     </ion-avatar>
-                    <h2>{{item.name}}</h2>
-                    <p>{{item.about}}</p>
-                    <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+                    <h2>{{item.category.content}}</h2>
+                    <p>پارچه: {{item.fabric.content}}</p>
+                    <p>دوزنده: {{item.tailor.name}}</p>
+                    <p>{{item.price | number : '1.0-0'}} تومان</p>
+                    <ion-note item-end *ngIf="item.price">در انتظار تایید</ion-note>
                   </button>
+                    <ion-item-options>
+                        <button ion-button color="danger" (click)="deleteItem(item)">
+                {{ 'DELETE_BUTTON' | translate }}
+              </button>
+                    </ion-item-options>
+
                 </ion-item-sliding>
             </ion-list>
         </div>

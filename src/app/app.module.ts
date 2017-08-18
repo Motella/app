@@ -6,14 +6,24 @@ import { Storage, IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 
+import { HomePage } from '../pages/home/home';
+import { AboutPage } from '../pages/about/about';
 import { CardsPage } from '../pages/cards/cards';
+<<<<<<< HEAD
 import { SizePage} from "../pages/size/size";
+=======
+import { FabricsPage } from '../pages/fabrics/fabrics';
+import { TailorsPage } from '../pages/tailors/tailors';
+>>>>>>> f405530b5fa173e141c222f84134283e3d7be628
 import { CategoriesPage } from '../pages/categories/categories';
 import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
-import { ListMasterPage } from '../pages/list-master/list-master';
+import { TailorSelectionPage } from '../pages/tailorSelection/tailorSelection';
+import { TailorDetailPage } from '../pages/tailor-detail/tailor-detail';
 import { LoginPage } from '../pages/login/login';
+import { PaymentPage } from '../pages/payment/payment';
+import { ConfirmPage } from '../pages/confirm/confirm';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
 import { SearchPage } from '../pages/search/search';
@@ -60,13 +70,22 @@ export function provideSettings(storage: Storage) {
 @NgModule({
   declarations: [
     MyApp,
+    AboutPage,
+    HomePage,
     CardsPage,
+<<<<<<< HEAD
     SizePage,
+=======
+    FabricsPage,
+>>>>>>> f405530b5fa173e141c222f84134283e3d7be628
     CategoriesPage,
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
-    ListMasterPage,
+    TailorSelectionPage,
+    TailorDetailPage,
+    ConfirmPage,
+    PaymentPage,
     LoginPage,
     MapPage,
     MenuPage,
@@ -75,7 +94,8 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    TailorsPage
   ],
   imports: [
     BrowserModule,
@@ -93,13 +113,22 @@ export function provideSettings(storage: Storage) {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    AboutPage,
+    HomePage,
     CardsPage,
+<<<<<<< HEAD
     SizePage,
+=======
+    FabricsPage,
+>>>>>>> f405530b5fa173e141c222f84134283e3d7be628
     CategoriesPage,
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
-    ListMasterPage,
+    TailorSelectionPage,
+    TailorDetailPage,
+    ConfirmPage,
+    PaymentPage,
     LoginPage,
     MapPage,
     MenuPage,
@@ -108,7 +137,8 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    TailorsPage
   ],
   providers: [
     Api,
