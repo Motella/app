@@ -8,8 +8,8 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "شهرزاد دوستی ",
-    "profilePic": "assets/img/speakers/bear.jpg",
+    "name": "علیرضا وفی",
+    "profilePic": "assets/img/tailors/Alireza.jpg",
     "about": "طراحی و دوخت انواع لباس های عروس و شب",
   };
 
@@ -17,8 +17,8 @@ export class Items {
   constructor(public http: Http) {
     let items = [
       {
-        "name": "شهرزاد دوستی ",
-        "profilePic": "assets/img/speakers/bear.jpg",
+        "name": "علیرضا وفی",
+        "profilePic": "assets/img/tailors/Alireza.jpg",
         "about": "طراحی و دوخت انواع لباس های عروس و شب",
         "likes": 5,
         "dislikes": 1,
@@ -28,43 +28,57 @@ export class Items {
         ]
       },
       {
-        "name": "هنگامه سلیمی",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
+        "name": "شراره لطفی",
+        "profilePic": "assets/img/tailors/Sharareh.jpg",
         "about": "طراحی و دوخت لباس های بچه گانه",
         "likes": 5,
         "dislikes": 1,
       },
       {
-        "name": "یاس فرابی",
-        "profilePic": "assets/img/speakers/duck.jpg",
+        "name": "آرش دانش",
+        "profilePic": "assets/img/tailors/Arash.jpg",
         "about": "طراحی و دوخت لباس مردانه رسمی و اسپورت",
         "likes": 15,
         "dislikes": 6,
       },
       {
-        "name": "گلنار توانا",
-        "profilePic": "assets/img/speakers/eagle.jpg",
+        "name": "فاطمه موقری",
+        "profilePic": "assets/img/tailors/Fatemeh.jpg",
         "about": "Eva is an Eagle.",
         "likes": 15,
         "dislikes": 3,
       },
       {
-        "name": "کلانتر هرمزی",
-        "profilePic": "assets/img/speakers/elephant.jpg",
+        "name": "زهرا یوسفی",
+        "profilePic": "assets/img/tailors/Zahra.jpg",
         "about": "طراحی و دوخت کت و شلوار",
         "likes": 50,
         "dislikes": 1,
       },
       {
-        "name": "گلشن میناوند",
-        "profilePic": "assets/img/speakers/mouse.jpg",
+        "name": "بیتا نفر داودی",
+        "profilePic": "assets/img/tailors/Bita.jpg",
         "about": "طراحی و دوخت لباس عروس",
         "likes": 6,
         "dislikes": 5,
       },
       {
-        "name": "گل رز",
-        "profilePic": "assets/img/speakers/puppy.jpg",
+        "name": "بابک رحیمی",
+        "profilePic": "assets/img/tailors/Babak.jpg",
+        "about": "طراحی و دوخت لباس مجلسی",
+        "likes": 24,
+        "dislikes": 3,
+      },
+      {
+        "name": "سبحان آیین",
+        "profilePic": "assets/img/tailors/Sobhan.jpg",
+        "about": "طراحی و دوخت لباس مجلسی",
+        "likes": 24,
+        "dislikes": 3,
+      },
+      {
+        "name":"پریناز علیزاده",
+        "profilePic": "assets/img/tailors/Parinaz.jpg",
         "about": "طراحی و دوخت لباس مجلسی",
         "likes": 24,
         "dislikes": 3,

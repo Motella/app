@@ -50,19 +50,12 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    //{ title: 'Tutorial', component: TutorialPage },
-    //{ title: 'Welcome', component: WelcomePage },
-    { title: 'خانه', component: HomePage },
-    { title: 'خیاط', component: TailorsPage },
+    //{ title: 'خانه', component: HomePage },
     { title: 'سفارش', component: TabsPage },
+    { title: 'خیاط', component: TailorsPage },
     { title: 'طرح', component: CardsPage },
-    { title: 'اندازه', component: SizePage },
-    //{ title: 'Content', component: ContentPage },
-   // { title: 'Login', component: LoginPage },
-   // { title: 'Signup', component: SignupPage },
-   // { title: 'Map', component: MapPage },
-    { title: 'Menu', component: MenuPage },
     { title: 'پارچه', component: FabricsPage },
+    { title: 'اندازه', component: SizePage },
     { title: 'درباره ما', component: AboutPage },
   ]
 
