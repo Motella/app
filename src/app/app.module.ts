@@ -9,12 +9,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { CardsPage } from '../pages/cards/cards';
-<<<<<<< HEAD
 import { SizePage} from "../pages/size/size";
-=======
 import { FabricsPage } from '../pages/fabrics/fabrics';
 import { TailorsPage } from '../pages/tailors/tailors';
->>>>>>> f405530b5fa173e141c222f84134283e3d7be628
 import { CategoriesPage } from '../pages/categories/categories';
 import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
