@@ -70,11 +70,8 @@ export function provideSettings(storage: Storage) {
     AboutPage,
     HomePage,
     CardsPage,
-<<<<<<< HEAD
     SizePage,
-=======
     FabricsPage,
->>>>>>> f405530b5fa173e141c222f84134283e3d7be628
     CategoriesPage,
     ContentPage,
     ItemCreatePage,
@@ -113,11 +110,8 @@ export function provideSettings(storage: Storage) {
     AboutPage,
     HomePage,
     CardsPage,
-<<<<<<< HEAD
     SizePage,
-=======
     FabricsPage,
->>>>>>> f405530b5fa173e141c222f84134283e3d7be628
     CategoriesPage,
     ContentPage,
     ItemCreatePage,

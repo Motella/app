@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TailorSelectionPage } from '../tailorSelection/tailorSelection';
+import { SizePage } from '../size/size';
 
 @Component({
   selector: 'page-fabrics',
   templateUrl: 'fabrics.html'
 })
+
 export class FabricsPage {
   cardItems: any[];
   item: any;
@@ -64,7 +66,7 @@ export class FabricsPage {
   }
   nextStep(selectedItem) {
     this.item.fabric = selectedItem;
-    this.navCtrl.push(TailorSelectionPage, {
+    this.navCtrl.push(SizePage, {
       item: this.item
     });
   }
