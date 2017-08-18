@@ -5,6 +5,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CardsPage } from '../pages/cards/cards';
+import {SizePage} from '../pages/size/size';
 import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
 import { ListMasterPage } from '../pages/list-master/list-master';
@@ -52,6 +53,7 @@ export class MyApp {
     { title: 'خیاط', component: ListMasterPage },
     { title: 'سفارش', component: TabsPage },
     { title: 'طرح', component: CardsPage },
+    { title: 'اندازه', component: SizePage },
     //{ title: 'Content', component: ContentPage },
    // { title: 'Login', component: LoginPage },
    // { title: 'Signup', component: SignupPage },
