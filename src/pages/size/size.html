@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      اندازه من
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <form (submit)="doSubmit($event)" [formGroup]="sizeForm">
+    <ion-list radio-group formControlName="sizes">
+      <ion-item>
+        <ion-label>از پروفایلم بردار</ion-label>
+        <ion-radio value="myprofile" checked="true"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>یه نفر بیاد اندازمو بگیره</ion-label>
+        <ion-radio value="sendanexpert"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </form>
+     <ion-list>
+  <ion-item>
+    <ion-label >شماره سایز (36 -  38 -...)</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >دوره سینه</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >دور کمر</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >قد آستین</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >قد شلوار</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>توضیحات</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+   </ion-list>
+ <div padding>
+    <button ion-button color="primary" block (click)="openPage(homePage)">بعدی</button>
+  </div>
+</ion-content>
+ 
